@@ -1,4 +1,3 @@
-
 <?php
 
 $class = [
@@ -42,18 +41,18 @@ $class = [
 ?>
 
 <?php
-    foreach ($class as $student) {
-    ?>
+foreach ($class as $student) {
+?>
     <div style="background-color: lightblue;
     width: 210px;
     padding: 8px;
     margin: 10px;
     ">
-    <h3><?="{$student['name']} {$student['lastName']}"?></h3> 
-    <span>
-        Media voti:
-        <strong><?= array_sum($student['votes']) / count($student['votes']) ?></strong>
-    </span>
+        <h3><?= "{$student['name']} {$student['lastName']}" ?></h3>
+        <span>
+            Media voti:
+            <strong><?= array_sum($student['votes']) / count($student['votes']) ?></strong>
+        </span>
     </div>
-    <?php   
+<?php
 } ?>
